@@ -4,6 +4,7 @@ import com.books.book_store.user.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -16,6 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "role")
 @EntityListeners(AuditingEntityListener.class)
 public class Role {
     @Id
@@ -27,6 +29,7 @@ public class Role {
     @ManyToMany(mappedBy = "roles")
     @JsonIgnore
     private List<User> users;
+    @CreatedDate
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
     @LastModifiedDate
