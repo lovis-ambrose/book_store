@@ -24,21 +24,30 @@ public class EmailService {
 
     // make process asynchronous
     @Async
-    public void sendEmail(String to, String username, EmailTemplateName emailTemplate, String confirmationUrl, String activationCode, String subject) throws MessagingException {
+    public void sendEmail(
+            String to,
+            String username,
+            EmailTemplateName emailTemplate,
+            String confirmationUrl,
+            String activationCode,
+            String subject
+    ) throws MessagingException {
         String templateName;
         if (emailTemplate == null) {
             templateName = "confirm-email";
-        }
-        else {
+        } else {
             templateName = emailTemplate.name();
         }
-
         MimeMessage mimeMessage = mailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, MULTIPART_MODE_MIXED, UTF_8.name());
+        MimeMessageHelper helper = new MimeMessageHelper(
+                mimeMessage,
+                MULTIPART_MODE_MIXED,
+                UTF_8.name()
+        );
         Map<String, Object> properties = new HashMap<>();
         properties.put("username", username);
         properties.put("confirmationUrl", confirmationUrl);
-        properties.put("activationCode", activationCode);
+        properties.put("activation_code", activationCode);
 
         Context context = new Context();
         context.setVariables(properties);
@@ -50,6 +59,7 @@ public class EmailService {
         String template = templateEngine.process(templateName, context);
 
         helper.setText(template, true);
+
         mailSender.send(mimeMessage);
     }
 }
