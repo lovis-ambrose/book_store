@@ -5,15 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/email/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/email/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/auth/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/auth/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/auth/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/security/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/email/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/email/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/templates/confirm_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/templates/confirm_email.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +75,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.books.book_store.auth" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="BookStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="book_store" />
@@ -86,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724056067618</updated>
-      <workItem from="1724056070418" duration="2122000" />
+      <workItem from="1724056070418" duration="11084000" />
     </task>
     <servers />
   </component>

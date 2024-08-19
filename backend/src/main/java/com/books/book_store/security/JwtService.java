@@ -48,7 +48,7 @@ public class JwtService {
         return buildToken(claims, userDetails, jwtExpiration);
     }
 
-    private String buildToken(Map<String, Object> extraClaims, UserDetails userDetails, Long jwtExpiration) {
+    public String buildToken(Map<String, Object> extraClaims, UserDetails userDetails, Long jwtExpiration) {
         var authorities = userDetails.getAuthorities()
                 .stream()
                 .map(GrantedAuthority::getAuthority)
