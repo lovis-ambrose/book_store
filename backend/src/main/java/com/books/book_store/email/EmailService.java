@@ -34,7 +34,7 @@ public class EmailService {
     ) throws MessagingException {
         String templateName;
         if (emailTemplate == null) {
-            templateName = "confirm-email";
+            templateName = "confirm_email";
         } else {
             templateName = emailTemplate.getName();
         }
