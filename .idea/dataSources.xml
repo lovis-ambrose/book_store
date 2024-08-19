@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="book_store@localhost" uuid="3415963f-a7de-4d3e-8137-f69b292df425">
+    <data-source source="LOCAL" name="book_store@localhost" uuid="e57d8d0b-3fe9-48b0-9560-a67093f1dcf7">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/backend/src/main/resources/application-dev.yml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/book_store</jdbc-url>
       <jdbc-additional-properties>
