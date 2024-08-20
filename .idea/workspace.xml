@@ -7,8 +7,10 @@
     <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/book/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/book/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/book/BookMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/book/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/exception/BusinessErrorCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/exceptionHandler/BusinessErrorCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/exception/ExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/exceptionHandler/ExceptionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/exceptionHandler/GlobalExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +74,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.books.book_store.exception" />
       <recent name="com.books.book_store.book" />
       <recent name="com.books.book_store.shared" />
-      <recent name="com.books.book_store.exception" />
       <recent name="com.books.book_store.auth" />
     </key>
   </component>
@@ -103,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724056067618</updated>
-      <workItem from="1724056070418" duration="45062000" />
+      <workItem from="1724056070418" duration="46974000" />
     </task>
     <servers />
   </component>

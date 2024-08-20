@@ -1,5 +1,6 @@
-package com.books.book_store.exception;
+package com.books.book_store.exceptionHandler;
 
+import com.books.book_store.exception.OperationNotPermittedException;
 import jakarta.mail.MessagingException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.books.book_store.exception.BusinessErrorCodes.*;
+import static com.books.book_store.exceptionHandler.BusinessErrorCodes.*;
 import static org.springframework.http.HttpStatus.*;
 
 @RestControllerAdvice
@@ -53,6 +54,15 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(MessagingException.class)
     public ResponseEntity<ExceptionResponse> handleException(MessagingException exp){
         return ResponseEntity.status(INTERNAL_SERVER_ERROR).body(
+                ExceptionResponse.builder()
+                        .errorMessage(exp.getMessage())
+                        .build()
+        );
+    }
+
+    @ExceptionHandler(OperationNotPermittedException.class)
+    public ResponseEntity<ExceptionResponse> handleException(OperationNotPermittedException exp){
+        return ResponseEntity.status(BAD_REQUEST).body(
                 ExceptionResponse.builder()
                         .errorMessage(exp.getMessage())
                         .build()

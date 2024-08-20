@@ -1,4 +1,4 @@
-package com.books.book_store.exception;
+package com.books.book_store.exceptionHandler;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
