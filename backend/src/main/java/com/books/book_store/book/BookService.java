@@ -130,4 +130,13 @@ public class BookService {
         bookRepository.save(book);
         return bookId;
     }
+
+    public Integer borrowBook(Integer bookId, Authentication connectedUser) {
+        Book book = bookRepository.findById(bookId).orElseThrow(() -> new EntityNotFoundException("No book with id " + bookId + " found"));
+        if (book.isArchived() || !book.isShareable()){
+            throw new OperationNotPermittedException("You cannot borrow book since it is archived or not shareable");
+        }
+        User user = ((User) connectedUser.getPrincipal());
+        return null;
+    }
 }
