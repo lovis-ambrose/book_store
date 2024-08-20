@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/auth/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/auth/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/auth/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/auth/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/auth/AuthenticationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/auth/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/auth/AuthenticationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/config/BeansConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/config/BeansConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/security/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/security/JwtService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -75,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.books.book_store.exception" />
       <recent name="com.books.book_store.auth" />
     </key>
   </component>
@@ -103,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724056067618</updated>
-      <workItem from="1724056070418" duration="15561000" />
+      <workItem from="1724056070418" duration="19499000" />
     </task>
     <servers />
   </component>
