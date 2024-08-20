@@ -1,5 +1,7 @@
 package com.books.book_store.user;
 
+import com.books.book_store.book.Book;
+import com.books.book_store.history.BookTransactionHistory;
 import com.books.book_store.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
@@ -46,6 +48,10 @@ public class User implements UserDetails, Principal {
     private LocalDateTime updatedAt;
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles;
+    @OneToMany(mappedBy = "owner")
+    private List<Book> books;
+    @OneToMany(mappedBy = "user")
+    private List<BookTransactionHistory> histories;
 
     @Override
     public String getName() {
