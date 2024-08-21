@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/feedback/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/feedback/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/BookStoreApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/BookStoreApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/book/Book$BookBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/book/Book$BookBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/book/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/book/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/config/BeansConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/config/BeansConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/exception/BusinessErrorCodes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/exception/ExceptionResponse$ExceptionResponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/exception/ExceptionResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/books/book_store/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724056067618</updated>
-      <workItem from="1724056070418" duration="76639000" />
+      <workItem from="1724056070418" duration="82590000" />
     </task>
     <servers />
   </component>
