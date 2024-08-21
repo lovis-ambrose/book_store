@@ -1,6 +1,7 @@
 package com.books.book_store.book;
 
 import com.books.book_store.exception.OperationNotPermittedException;
+import com.books.book_store.file.FileStorageService;
 import com.books.book_store.history.BookTransactionHistory;
 import com.books.book_store.history.BookTransactionHistoryRepository;
 import com.books.book_store.shared.PageResponse;
@@ -13,6 +14,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 import java.util.Objects;
@@ -25,6 +27,7 @@ public class BookService {
     private final BookRepository bookRepository;
     private final BookTransactionHistoryRepository transactionHistoryRepository;
     private final BookMapper bookMapper;
+    private final FileStorageService fileStorageService;
 
     public Integer save(BookRequest request, Authentication connectedUser) {
         User user = ((User) connectedUser.getPrincipal());
@@ -181,5 +184,13 @@ public class BookService {
                 .orElseThrow(() -> new OperationNotPermittedException("Book not yet returned. You cannot approve unreturned book"));
         bookTransactionHistory.setReturned(true);
         return transactionHistoryRepository.save(bookTransactionHistory).getId();
+    }
+
+    public void uploadBookCoverImage(MultipartFile file, Authentication connectedUser, Integer bookId) {
+        Book book = bookRepository.findById(bookId).orElseThrow(() -> new EntityNotFoundException("No book with id " + bookId + " found"));
+        User user = ((User) connectedUser.getPrincipal());
+        var bookCover = fileStorageService.saveFile(file, user.getId());
+        book.setBookCover(bookCover);
+        bookRepository.save(book);
     }
 }
