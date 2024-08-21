@@ -137,6 +137,19 @@ public class BookService {
             throw new OperationNotPermittedException("You cannot borrow book since it is archived or not shareable");
         }
         User user = ((User) connectedUser.getPrincipal());
-        return null;
+        if (Objects.equals(book.getOwner().getId(), user.getId())) {
+            throw new OperationNotPermittedException("You cannot borrow your own book");
+        }
+        final boolean isAlreadyBorrowed = transactionHistoryRepository.isAlreadyBorrowedByUser(bookId, user.getId());
+        if (isAlreadyBorrowed){
+            throw new OperationNotPermittedException("Requested book already borrowed");
+        }
+        BookTransactionHistory bookTransactionHistory = BookTransactionHistory.builder()
+                .user(user)
+                .book(book)
+                .returned(false)
+                .returnApproved(false)
+                .build();
+        return transactionHistoryRepository.save(bookTransactionHistory).getId();
     }
 }
