@@ -31,6 +31,11 @@ export class LoginComponent {
     },
       error: (err) => {
         console.log(err);
+        if (err.error.validationErrors) {
+          this.errorMsg = err.error.validationErrors;
+        } else {
+          this.errorMsg.push(err.error.error);
+        }
       }
     });
   }
