@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="" />
+    <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/token/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/token/token.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +113,7 @@
       <workItem from="1724426055829" duration="3774000" />
       <workItem from="1724429857920" duration="446000" />
       <workItem from="1724430325685" duration="305000" />
-      <workItem from="1724434303777" duration="3299000" />
+      <workItem from="1724434303777" duration="5147000" />
     </task>
     <servers />
   </component>
