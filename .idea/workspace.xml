@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/login/login.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,6 +111,9 @@
       <workItem from="1724311742859" duration="11395000" />
       <workItem from="1724419224353" duration="6081000" />
       <workItem from="1724426055829" duration="3774000" />
+      <workItem from="1724429857920" duration="446000" />
+      <workItem from="1724430325685" duration="305000" />
+      <workItem from="1724434303777" duration="2886000" />
     </task>
     <servers />
   </component>
