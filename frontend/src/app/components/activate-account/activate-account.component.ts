@@ -8,9 +8,10 @@ import {Router} from "@angular/router";
   styleUrl: './activate-account.component.scss'
 })
 export class ActivateAccountComponent {
-  message = '';
-  isOkay = true;
-  submitted = false;
+  message: string = '';
+  isOkay: boolean = true;
+  submitted: boolean = false;
+
   constructor(
     private router: Router,
     private authService: AuthenticationService
@@ -40,5 +41,5 @@ export class ActivateAccountComponent {
     this.confirmAccount(token);
   }
 
-  protected readonly skipUntil = skipUntil;
+  // protected readonly skipUntil = skipUntil;
 }
