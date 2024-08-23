@@ -21,7 +21,18 @@ export class LoginComponent {
   ) {}
 
   login() {
-    this.router.navigate(["books"]);
+    this.errorMsg = [];
+    this.authService.authenticate({
+      body: this.authRequest
+    }).subscribe({
+      next: () => {
+        // todo save the token
+        this.router.navigate(['books']);
+    },
+      error: (err) => {
+        console.log(err);
+      }
+    });
   }
 
   register() {
