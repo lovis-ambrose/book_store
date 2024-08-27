@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/modules/book/book-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/modules/book/book-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/modules/book/book.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/modules/book/book.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,7 @@
       <workItem from="1724430325685" duration="305000" />
       <workItem from="1724434303777" duration="7797000" />
       <workItem from="1724495061122" duration="1118000" />
-      <workItem from="1724783275439" duration="2266000" />
+      <workItem from="1724783275439" duration="3985000" />
     </task>
     <servers />
   </component>
