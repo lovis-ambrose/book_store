@@ -1,6 +1,5 @@
-import {Component, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {BookResponse} from "../../../../services/models/book-response";
-import EventEmitter from "node:events";
 
 @Component({
   selector: 'app-book-card',
@@ -10,7 +9,6 @@ import EventEmitter from "node:events";
 export class BookCardComponent {
   private _book: BookResponse = {};
   private _manage = false;
-  private _bookCover: string | undefined;
 
   get bookCover(): string | undefined {
     if (this._book.coverImage) {
@@ -68,5 +66,4 @@ export class BookCardComponent {
   onShowDetails() {
     this.details.emit(this._book);
   }
-
 }
