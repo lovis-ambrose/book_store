@@ -7,6 +7,9 @@
     <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/interceptor/http-token.interceptor.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/interceptor/http-token.interceptor.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +119,10 @@
       <workItem from="1724840183452" duration="10029000" />
       <workItem from="1724861666698" duration="1572000" />
       <workItem from="1724933500988" duration="683000" />
-      <workItem from="1724934204588" duration="1478000" />
+      <workItem from="1724934204588" duration="3109000" />
+      <workItem from="1725001941379" duration="5327000" />
+      <workItem from="1725025264823" duration="4000" />
+      <workItem from="1725026463717" duration="382000" />
     </task>
     <servers />
   </component>
