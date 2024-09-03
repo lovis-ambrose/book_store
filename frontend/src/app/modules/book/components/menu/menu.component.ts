@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class MenuComponent {
 
   logout() {
-
+    localStorage.removeItem('token');
+    window.location.reload();
   }
 }
