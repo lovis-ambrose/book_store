@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/books/book_store/book/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.angular/cache/18.2.1/frontend/.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/token/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/token/token.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +123,7 @@
       <workItem from="1725001941379" duration="5327000" />
       <workItem from="1725025264823" duration="4000" />
       <workItem from="1725026463717" duration="382000" />
-      <workItem from="1725350461351" duration="33983000" />
+      <workItem from="1725350461351" duration="34947000" />
     </task>
     <servers />
   </component>
