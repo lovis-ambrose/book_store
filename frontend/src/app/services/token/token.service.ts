@@ -1,47 +1,42 @@
-import {Injectable} from '@angular/core';
+import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
 import {JwtHelperService} from "@auth0/angular-jwt";
+import {isPlatformBrowser} from "@angular/common";
 
 @Injectable({
   providedIn: 'root'
 })
 export class TokenService {
-  set token(token: string | null) {
-    if (typeof window !== 'undefined' && token) {
+  constructor(@Inject(PLATFORM_ID) private platformId: any) {}
+
+  set token(token: string) {
+    if (this.isBrowser()) {
       localStorage.setItem('token', token);
     }
   }
 
   get token(): string | null {
-    if (typeof window !== 'undefined') {
+    if (this.isBrowser()) {
       return localStorage.getItem('token') as string;
     }
     return null;
   }
 
-  removeToken(): void {
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('token');
-    }
-  }
-
-  isTokenNotValid() {
-    return !this.isTokenValid();
-  }
-
-  isTokenValid() {
+  isTokenValid(): boolean {
     const token = this.token;
     if (!token) {
       return false;
     }
-    // decode the token
     const jwtHelper = new JwtHelperService();
-    // check expiry date
     const isTokenExpired = jwtHelper.isTokenExpired(token);
-    if (isTokenExpired) {
+    if (isTokenExpired && this.isBrowser()) {
       localStorage.clear();
       return false;
     }
     return true;
+  }
+
+  isTokenNotValid(): boolean {
+    return !this.isTokenValid();
   }
 
   get userRoles(): string[] {
@@ -49,9 +44,13 @@ export class TokenService {
     if (token) {
       const jwtHelper = new JwtHelperService();
       const decodedToken = jwtHelper.decodeToken(token);
-      console.log(decodedToken.authorities);
       return decodedToken.authorities;
     }
     return [];
+  }
+
+  // Check if we're running in the browser
+  private isBrowser(): boolean {
+    return isPlatformBrowser(this.platformId);
   }
 }
