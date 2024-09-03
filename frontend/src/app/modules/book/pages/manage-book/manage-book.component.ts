@@ -29,7 +29,7 @@ export class ManageBookComponent implements OnInit {
   ngOnInit(): void {
     const bookId = this.activatedRoute.snapshot.params['bookId'];
     if (bookId) {
-      this.bookService.findBookById({
+      this.bookService.getBookById({
         'book-id': bookId
       }).subscribe({
         next: (book) => {
@@ -41,7 +41,7 @@ export class ManageBookComponent implements OnInit {
             synopsis: book.synopsis as string,
             shareable: book.shareable
           };
-          this.selectedPicture='data:image/jpg;base64,' + book.cover;
+          this.selectedPicture='data:image/jpg;base64,' + book.coverImage;
         }
       });
     }
@@ -52,7 +52,7 @@ export class ManageBookComponent implements OnInit {
       body: this.bookRequest
     }).subscribe({
       next: (bookId) => {
-        this.bookService.uploadBookCoverPicture({
+        this.bookService.uploadBookCoverImage({
           'book-id': bookId,
           body: {
             file: this.selectedBookCover
