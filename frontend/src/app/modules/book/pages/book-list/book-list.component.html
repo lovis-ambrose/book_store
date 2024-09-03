@@ -12,6 +12,7 @@
 <div class="d-flex justify-content-start gap-2 flex-wrap">
   <app-book-card
     *ngFor="let book of bookResponse.content"
+    title="borrow book"
     [book]="book"
     (borrow)="borrowBook($event)"
     (details)="displayBookDetails($event)"
@@ -23,6 +24,7 @@
       <li class="page-item">
         <a
           (click)="goToFirstPage()"
+          title="goToFirstPage"
           class="page-link"
           href="javascript:void(0)"
           aria-label="Previous"
@@ -34,6 +36,7 @@
       <li class="page-item">
         <a
           (click)="goToPreviousPage()"
+          title="goToPreviousPage"
           class="page-link"
           href="javascript:void(0)"
           aria-label="Previous"
@@ -47,7 +50,8 @@
         *ngFor="let pageIndex of pages"
       >
         <a
-          (click)="gotToPage(pageIndex)"
+          (click)="goToPage(pageIndex)"
+          title="goToPage"
           class="page-link"
           [class.active]="page === pageIndex"
           href="javascript:void(0)"
@@ -56,6 +60,7 @@
       <li class="page-item">
         <a
           (click)="goToNextPage()"
+          title="goToNextPage"
           class="page-link"
           href="javascript:void(0)"
           aria-label="Next"
@@ -67,6 +72,7 @@
       <li class="page-item">
         <a
           (click)="goToLastPage()"
+          title="goToLastPage"
           class="page-link"
           href="javascript:void(0)"
           aria-label="Next"

@@ -42,7 +42,7 @@ export class BookListComponent implements OnInit {
       });
   }
 
-  gotToPage(page: number) {
+  goToPage(page: number) {
     this.page = page;
     this.findAllBooks();
   }
