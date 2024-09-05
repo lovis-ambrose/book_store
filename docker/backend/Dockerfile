@@ -6,7 +6,6 @@ RUN mvn dependency:go-offline
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-
 # Runtime stage
 FROM amazoncorretto:17
 # pass arguments in case of fixes that may change version
@@ -22,4 +21,4 @@ ENV DB_URL=jdbc:postgresql://postgres-sql-bsn:5432/book_store
 ENV ACTIVE_PROFILE=${PROFILE}
 ENV JAR_VERSION=${APP_VERSION}
 
-CMD java -jar -Dspring.profiles.active=${ACTIVE_PROFILE} -Dspring.datasource.url=${DB_URL} book_store-${JAR_VERSION}.jar
+CMD ["java", "-Dspring.profiles.active=${ACTIVE_PROFILE}", "-Dspring.datasource.url=${DB_URL}", "-jar", "book_store-${JAR_VERSION}.jar"]
