@@ -21,4 +21,6 @@ ENV DB_URL=jdbc:postgresql://postgres-sql-bsn:5432/book_store
 ENV ACTIVE_PROFILE=${PROFILE}
 ENV JAR_VERSION=${APP_VERSION}
 
-CMD ["java", "-Dspring.profiles.active=${ACTIVE_PROFILE}", "-Dspring.datasource.url=${DB_URL}", "-jar", "book_store-${JAR_VERSION}.jar"]
+CMD ["sh", "-c", "java -Dspring.profiles.active=${ACTIVE_PROFILE} -Dspring.datasource.url=${DB_URL} -jar book_store-${JAR_VERSION}.jar"]
+
+
