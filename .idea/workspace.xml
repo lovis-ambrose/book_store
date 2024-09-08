@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="small fix">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e57d8d0b-3fe9-48b0-9560-a67093f1dcf7/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="8dc56ea0-01c1-4a69-93ad-56cd51c8989c" name="Changes" comment="fix and build containers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/frontend/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +130,8 @@
       <workItem from="1725539924237" duration="8253000" />
       <workItem from="1725548276796" duration="22089000" />
       <workItem from="1725702615954" duration="2340000" />
-      <workItem from="1725705172286" duration="1041000" />
+      <workItem from="1725705172286" duration="10105000" />
+      <workItem from="1725796098684" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="fix maven build errors">
       <option name="closed" value="true" />
@@ -191,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725700945367</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix and build containers">
+      <option name="closed" value="true" />
+      <created>1725706414612</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725706414612</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +209,7 @@
     <MESSAGE value="define env variables and profiles" />
     <MESSAGE value="build image" />
     <MESSAGE value="small fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fix" />
+    <MESSAGE value="fix and build containers" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix and build containers" />
   </component>
 </project>
