@@ -1,4 +1,4 @@
-FROM node:18 as build-stage
+FROM node:18 AS build-stage
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build --prod
 
-FROM nginx:apline
+FROM nginx:alpine
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
